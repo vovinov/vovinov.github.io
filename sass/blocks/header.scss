@@ -1,0 +1,43 @@
+.header {
+    background: url('../img/computer.jpg') center no-repeat;
+
+}
+
+.header__wrap {    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh; 
+}
+
+.header__info {
+    width: -50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column  ;
+    align-items: flex-end;
+    padding-top:220px;
+}
+
+.header__name {  
+    display: inline-block;  
+    margin-bottom: 40px;  
+    font-weight: 700;
+    background-image: linear-gradient(to right, $blue, $green);
+    background-clip: text;
+    letter-spacing: 3px;
+    font-size: 50px;    
+    color: transparent;
+    line-height: 1.2;      
+}    
+
+.header__btns {
+    display: flex;
+}
+
+.header__btn {
+    @include btn(white, $black);  
+    
+    &--work {
+        margin-right: 20px;
+    }   
+}

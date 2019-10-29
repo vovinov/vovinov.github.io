@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Портфолио работ</title>
+    
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__wrap wrap">    
+                <div class="header__info">
+                    <h1 class="header__name">Hello! I'm Frontend developer</h1>     
+                    <div class="header__btns">
+                        <a href="#works" class="header__btn header__btn--work">Мои работы</a>
+                        <a class="header__btn">Контакты</a>
+                    </div>
+                </div>            
+            </div>
+        </header>
+        <section class="works" id="works">            
+            <div class="works__wrap wrap">
+                <h2 class="works__title-hide">Works</h2>
+                <ul class="works__categories">
+                    <li class="works__category">
+                        <a class="works__link works__link--all" data-filter="All">All</a>
+                    </li>
+                    <li class="works__category">
+                        <a class="works__link" data-filter="Site">Site</a>
+                    </li>
+                    <li class="works__category">
+                        <a class="works__link" data-filter="Javascript">Javascript</a>
+                    </li>
+                    <li class="works__category">
+                        <a class="works__link" data-filter="Form">Form</a>
+                    </li>
+                    <li class="works__category">
+                        <a class="works__link" data-filter="404">404</a>
+                    </li>
+                </ul>
+                <ul class="works__list">
+                    <li class="works__item works__item--nerds" data-cat="Site">
+                        <img src="./img/nerds.png" alt="Nerds">                        
+                        <div class="works__block">
+                            <a class="works__site" href="./assets/nerds/" class="works__site">
+                                Перейти на сайт
+                            </a>
+                        </div>
+                    </li>
+                    <li class="works__item" data-cat="Site">
+                        <img src="./img/granit.png" alt="Granit">     
+                        <div class="works__block">
+                            <a class="works__site" href="./assets/granit/" class="works__site">
+                                Перейти на сайт
+                            </a>
+                        </div>                
+                    </li>                    
+                </ul>
+            </div>            
+        </section>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>

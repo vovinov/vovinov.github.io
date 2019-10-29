@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size:16px;
+    color:$black;
+    
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;    
+}
+
+.container {
+    @include min-max(320px, 1920px, 0);
+    background-color: $white;
+}
+
+
+.wrap {
+    @include min-max(320px, 1200px, 15px);
+}

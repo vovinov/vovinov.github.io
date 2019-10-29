@@ -1,0 +1,36 @@
+@mixin min-max($min-width, $max-width, $padding) {
+    min-width: $min-width;
+    max-width: $max-width;
+    padding: 0 $padding;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@mixin btn($colorBg, $colorText) {
+    display: block;    
+    border-radius: 60px;
+    background-color: $colorBg;
+    color: $colorText;
+    text-decoration: none;
+    cursor: pointer;
+    padding:20px 30px;
+    min-width: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition-property: background-color, color;
+    transition-duration: 500ms;    
+    @content;
+}
+
+@mixin visually-hidden() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding:0;
+    white-space: no-wrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
