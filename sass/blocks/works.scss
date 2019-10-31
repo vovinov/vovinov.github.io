@@ -38,6 +38,7 @@
     font-weight: 700;
     text-decoration: none;
     outline: none;
+    cursor: pointer;
 
     &:active, 
     &:focus {
@@ -109,7 +110,5 @@
     text-transform: uppercase;
     color:$black;
     font-weight: 900;
-    opacity: 0;
-
-    
+    opacity: 0;        
 }
