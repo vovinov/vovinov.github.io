@@ -6,10 +6,10 @@
     box-sizing: border-box;
 }
 
-@mixin btn($colorBg, $colorText) {
+@mixin btn($colorBg-1, $colorBg-2, $colorText) {
     display: block;    
     border-radius: 60px;
-    background-color: $colorBg;
+    background-image: linear-gradient(center, $colorBg-1, $colorBg-2);
     color: $colorText;
     text-decoration: none;
     cursor: pointer;

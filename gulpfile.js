@@ -1,6 +1,7 @@
 global.$ = {
     gulp: require('gulp'), 
-    gp: require('gulp-load-plugins')(),     
+    gp: require('gulp-load-plugins')(),   
+    browserSync: require('browser-sync').create(), 
     path: {
         jquery: "./js/jquery.js",
         js: "./js/**/*.js",

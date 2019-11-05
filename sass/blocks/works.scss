@@ -1,9 +1,9 @@
 .works {
-    padding: 80px;
+    padding: 40px;
 }
 
 .works__wrap {    
-    height:80vh;
+    
 }
 
 .works__title-hide {
@@ -50,7 +50,7 @@
         position:absolute;
         width: 100%;
         height: 4px;
-        background-color: $red;
+        background-color: $blue;
         display: block;
         margin-top: 5px;
         opacity: 0;
@@ -62,15 +62,15 @@
 .works__list {
     list-style: none;
     display:grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
     grid-template-rows: repeat(2, 200px);
     grid-gap: 20px;
+    justify-content: center;
     padding: 40px 0;
 }
 
 .works__item { 
-    position: relative; 
-    width: 250px;  
+    position: relative;       
     grid-column: span 1;
     overflow: hidden;  
     transition: all 250ms;        

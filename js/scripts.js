@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	// плавное перемещение страницы к нужному блоку
-	$(".header__btn--work").click(function () {
+	$(".header__btn--works").click(function () {
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top;
+		$("body,html").animate({scrollTop: destination }, 800);
+    });
+
+    $(".header__btn--skills").click(function () {
 		elementClick = $(this).attr("href");
 		destination = $(elementClick).offset().top;
 		$("body,html").animate({scrollTop: destination }, 800);

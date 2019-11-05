@@ -1,0 +1,9 @@
+
+@keyframes btn_animation {
+
+    0% { background-image: linear-gradient(270deg, $blue, $green);}
+    25% { background-image:linear-gradient(0deg, $blue, $green);}
+    50% { background-image:linear-gradient(90deg, $blue, $green);}
+    75% { background-image:linear-gradient(180deg, $blue, $green);}
+    100% { background-image:linear-gradient(270deg, $blue, $green);}
+}
