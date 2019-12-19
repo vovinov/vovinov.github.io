@@ -1,9 +1,7 @@
 .skills {
-    padding: 80px 0;    
-}
-
-.skills__wrap {
-
+    margin-top: -80px;
+    padding: 0 0 80px;    
+    @include md(margin-top, 0);
 }
 
 .skills__title {
@@ -16,16 +14,14 @@
 }
 
 .skills__list {    
-    list-style: none;
-    
+    list-style: none;    
     display: grid;
     grid-template-columns: repeat(auto-fit, 150px);   
     grid-template-rows: repeat(auto-fill, 150px);
     grid-auto-rows: 150px; 
     grid-gap: 10px;
     justify-content: center;
-    justify-items: center;
-   
+    justify-items: center; 
 }
 
 .skills__item { 
@@ -33,8 +29,8 @@
     width:150px;    
     background-image: linear-gradient(
         to right, 
-        rgba($blue, 0.5),
-        rgba($green, 0.5));           
+        rgba(black, 0.5),
+        rgba($white, 0.5));           
     background-position: center center;        
     background-repeat:  no-repeat;       
     background-size: cover; 
@@ -75,6 +71,12 @@
             border: 5px solid black;
         }  
     } 
+
+    &--1 {
+        grid-column: 5 / 6;
+        @include md(grid-column-start, 1);
+        @include md(grid-column-end, 2);
+    }
 }      
  .skills__percent  {
     color: $red;

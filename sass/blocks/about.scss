@@ -1,0 +1,26 @@
+.about {
+
+}
+
+
+.about__title {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.25;   
+}
+
+.about__img {
+    @include col();
+    @include size(6);
+    max-width: 420px;
+    height: 530px;
+    border: 30px solid #e8e8e8;
+}
+
+.about__text {
+    @include col();
+    @include size(6);
+}

@@ -4,125 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Портфолио работ</title>
-    
+    <title>Портфолио</title>    
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="header__wrap wrap">    
-                <div class="header__info">                    
-                    <h1 class="header__name">PORTFOLIO</h1>     
-                    <div class="header__btns">
-                        <a href="#skills" class="header__btn header__btn--skills">SKILLS</a>
-                        <a href="#works" class="header__btn header__btn--works">WORKS</a>
-                    </div>
-                </div>            
-            </div>
+        <header class="header">             
+            <nav>
+                <ul class="nav__list row">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--main">Главная</a>
+                    </li>                
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link nav__link--skills">Навыки</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link nav__link--works">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link nav__link--contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>           
+            <div class="header__info row">
+                <h1 class="header__name">vyacheslav ovinov</h1>  
+                <p class="header_subtitle">front-end developer</p> 
+                <a href="https://yadi.sk/i/BIkdDxM5kHZaPw" class="header__btn">Скачать CV(.pdf)</a>
+            </div>     
+            <div class="header-news row">                
+                <div class="header-news__item">                        
+                    <span class="header-news__date">18 Декабря 2019</span>
+                    <p class="header-news__text">Добавлен новый проект в портфолио! </p>
+                </div>             
+            </div>         
         </header>
-        <section class="skills" id="skills">
-            <div class="skills__wrap wrap">
-                <h2 class="skills__title skills__title--hide">Skills</h2>
-                <ul class="skills__list"> 
-                    <li class="skills__item skills__item--1">
-                        <img src="./img/html-svg.svg" alt="">
-                        <p class="skills__percent">90%</p>
-                    </li>                   
-                    <li class="skills__item skills__item--2">
-                        <img src="./img/css-svg.svg" alt="">
-                        <p class="skills__percent">90%</p>
-                    </li>                    
-                    <li class="skills__item skills__item--3">
-                        <img src="./img/gulp-svg.svg" alt="">
-                        <p class="skills__percent">80%</p>
+        <main>    
+            <section class="skills" id="skills">
+                    <div class="skills__wrap wrap">
+                        <h2 class="skills__title skills__title--hide">Skills</h2>
+                        <ul class="skills__list"> 
+                        <li class="skills__item skills__item--1">
+                            <img src="./img/html-svg.svg" alt="">
+                            <p class="skills__percent">90%</p>
+                        </li>                   
+                        <li class="skills__item skills__item--2">
+                            <img src="./img/css-svg.svg" alt="">
+                            <p class="skills__percent">90%</p>
+                        </li>                    
+                        <li class="skills__item skills__item--3">
+                            <img src="./img/gulp-svg.svg" alt="">
+                            <p class="skills__percent">80%</p>
+                        </li>
+                        <li class="skills__item skills__item--4">
+                            <img src="./img/js-svg.svg" alt="">
+                            <p class="skills__percent">60%</p>
+                        </li>
+                        <li class="skills__item skills__item--4">
+                            <img src="./img/nodejs-svg.svg" alt="">
+                            <p class="skills__percent">30%</p>
+                        </li>
+                        <li class="skills__item">
+                            <img src="./img/npm-svg.svg" alt="">
+                            <p class="skills__percent">30%</p>
+                        </li>
+                        <li class="skills__item">
+                            <img src="./img/sass-svg.svg" alt="">
+                            <p class="skills__percent">70%</p>
+                        </li>
+                        <li class="skills__item">
+                            <img src="./img/bootstrap-svg.svg" alt="">
+                            <p class="skills__percent">20%</p>
+                        </li>
+                        <li class="skills__item">
+                            <img src="./img/php-svg.svg" alt="">
+                            <p class="skills__percent">40%</p>
+                        </li>   
+                        <li class="skills__item">
+                            <img src="./img/wordpress-svg.svg" alt="">
+                            <p class="skills__percent">50%</p>
+                        </li>     
+                        <li class="skills__item">
+                            <img src="./img/photoshop-svg.svg" alt="">
+                            <p class="skills__percent">30%</p>
+                        </li>                                                   
+                    </ul>
+                </div>
+
+            </section>
+            <section class="works" id="works">            
+                <div class="works__wrap wrap">
+                    <h2 class="works__title-hide">Works</h2>
+                    <ul class="works__categories">
+                        <li class="works__category">
+                            <a class="works__link works__link--all" data-filter="All">All</a>
+                        </li>
+                        <li class="works__category">
+                            <a class="works__link" data-filter="Site">Site</a>
+                        </li>
+                        <li class="works__category">
+                            <a class="works__link" data-filter="Javascript">Javascript</a>
+                        </li>
+                        <li class="works__category">
+                            <a class="works__link" data-filter="Form">Form</a>
+                        </li>                    
+                    </ul>
+                    <ul class="works__list">
+                        <li class="works__item works__item--nerds" data-cat="Site">
+                            <img src="./img/nerds.png" alt="Nerds">                        
+                            <div class="works__block">
+                                <a href="./assets/nerds/index.html" class="works__site">
+                                    Главная
+                                </a>
+                                <a href="./assets/nerds/nerds-catalog.html" class="works__site">
+                                    Каталог
+                                </a>
+                            </div>
+                        </li>
+                        <li class="works__item" data-cat="Site">
+                            <img src="./img/granit.png" alt="Granit">     
+                            <div class="works__block">
+                                <a class="works__site" href="./assets/granit/index.html">
+                                    Главная
+                                </a>
+                            </div>                
+                        </li>  
+                        <li class="works__item" data-cat="Form">
+                            <img src="./img/violet.png" alt="Violet">     
+                            <div class="works__block">
+                                <a class="works__site" href="./assets/violet/index.html">
+                                    Открыть
+                                </a>
+                            </div>                
+                        </li>
+                        <li class="works__item" data-cat="Javascript">
+                            <img src="./img/keksobooking.png" alt="Keksobooking">     
+                            <div class="works__block">
+                                <a class="works__site" href="./assets/keksobooking/index.html">
+                                    Открыть
+                                </a>
+                            </div>                
+                        </li>    
+                    </ul>
+                </div>            
+            </section>
+        </main>
+        <footer class="contacts" id="contacts">
+            <div class="row justify-content-space-between">
+                <h3 class="contacts__heading">контакты</h3>
+                <ul class="contacts__list d-flex justify-content-center">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="https://www.facebook.com/slavaov">
+                            <img src="/img/contacts-facebook.svg" alt="Facebook">
+                        </a>
                     </li>
-                    <li class="skills__item skills__item--4">
-                        <img src="./img/js-svg.svg" alt="">
-                        <p class="skills__percent">60%</p>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="https://github.com/vovinov">
+                            <img src="/img/contacts-github.svg" alt="Github">
+                        </a>
                     </li>
-                    <li class="skills__item">
-                        <img src="./img/nodejs-svg.svg" alt="">
-                        <p class="skills__percent">30%</p>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:v.v.ovinov@yandex.ru">
+                            <img src="/img/contacts-email.svg" alt="Email">
+                        </a>
                     </li>
-                    <li class="skills__item">
-                        <img src="./img/npm-svg.svg" alt="">
-                        <p class="skills__percent">30%</p>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+79152883251">
+                            <img src="/img/contacts-phone.svg" alt="Phone">
+                        </a>
                     </li>
-                    <li class="skills__item">
-                        <img src="./img/sass-svg.svg" alt="">
-                        <p class="skills__percent">70%</p>
-                    </li>
-                    <li class="skills__item">
-                        <img src="./img/bootstrap-svg.svg" alt="">
-                        <p class="skills__percent">20%</p>
-                    </li>
-                    <li class="skills__item">
-                        <img src="./img/php-svg.svg" alt="">
-                        <p class="skills__percent">40%</p>
-                    </li>   
-                    <li class="skills__item">
-                        <img src="./img/wordpress-svg.svg" alt="">
-                        <p class="skills__percent">50%</p>
-                    </li>     
-                    <li class="skills__item">
-                        <img src="./img/photoshop-svg.svg" alt="">
-                        <p class="skills__percent">30%</p>
-                    </li>                                                   
                 </ul>
             </div>
-
-        </section>
-        <section class="works" id="works">            
-            <div class="works__wrap wrap">
-                <h2 class="works__title-hide">Works</h2>
-                <ul class="works__categories">
-                    <li class="works__category">
-                        <a class="works__link works__link--all" data-filter="All">All</a>
-                    </li>
-                    <li class="works__category">
-                        <a class="works__link" data-filter="Site">Site</a>
-                    </li>
-                    <li class="works__category">
-                        <a class="works__link" data-filter="Javascript">Javascript</a>
-                    </li>
-                    <li class="works__category">
-                        <a class="works__link" data-filter="Form">Form</a>
-                    </li>                    
-                </ul>
-                <ul class="works__list">
-                    <li class="works__item works__item--nerds" data-cat="Site">
-                        <img src="./img/nerds.png" alt="Nerds">                        
-                        <div class="works__block">
-                            <a href="./assets/nerds/index.html" class="works__site">
-                                Главная
-                            </a>
-                            <a href="./assets/nerds/nerds-catalog.html" class="works__site">
-                                Каталог
-                            </a>
-                        </div>
-                    </li>
-                    <li class="works__item" data-cat="Site">
-                        <img src="./img/granit.png" alt="Granit">     
-                        <div class="works__block">
-                            <a class="works__site" href="./assets/granit/index.html" class="works__site">
-                                Главная
-                            </a>
-                        </div>                
-                    </li>  
-                    <li class="works__item" data-cat="Form">
-                        <img src="./img/violet.png" alt="Violet">     
-                        <div class="works__block">
-                            <a class="works__site" href="./assets/violet/index.html" class="works__site">
-                                Открыть
-                            </a>
-                        </div>                
-                    </li>                  
-                </ul>
-            </div>            
-        </section>
+        </footer>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/animate.js"></script>
 </body>
 </html>
