@@ -1,6 +1,5 @@
 .skills {
-    margin-top: -80px;
-    padding: 0 0 80px;    
+    padding: 80px 0;    
     @include md(margin-top, 0);
 }
 
@@ -70,14 +69,9 @@
         &:hover {
             border: 5px solid black;
         }  
-    } 
+    }     
+} 
 
-    &--1 {
-        grid-column: 5 / 6;
-        @include md(grid-column-start, 1);
-        @include md(grid-column-end, 2);
-    }
-}      
  .skills__percent  {
     color: $red;
     font-size: 30px;

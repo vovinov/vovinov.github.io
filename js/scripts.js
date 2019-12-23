@@ -4,14 +4,15 @@ $(document).ready(function(){
     // плавное перемещение страницы к нужному блоку
 
     function animateLink(path) {
-        $(path).click(function () {
-            elementClick = $(this).attr("href");
-            destination = $(elementClick).offset().top;
+        $(path).click(function () {            
+            let elementClick = $(this).attr("href");
+            let destination = $(elementClick).offset().top;
             $("body,html").animate({scrollTop: destination }, 800);
         });
     };
 
     animateLink('.nav__link--main');
+    animateLink('.nav__link--about');
     animateLink('.nav__link--skills');
     animateLink('.nav__link--works');   
     animateLink('.nav__link--contacts');   

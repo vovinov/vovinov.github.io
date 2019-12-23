@@ -8,7 +8,7 @@ img {
 
 html {
     box-sizing: border-box;
-    font-size:16px;
+    font-size:20px;
     color:$black;
 }
 
@@ -36,7 +36,20 @@ body {
 }
 
 .justify-content-space-between {
-    justify-content: space-between;
+    justify-content: space-between; 
+}
 
+.mb-70 { 
+    margin-bottom: 70px; 
+    @include sm(margin-bottom, 30px);
     
 }
+.mb-30 { margin-bottom: 30px; }
+
+.mt-70 { 
+    margin-top: 70px;
+    @include sm(margin-top, 30px);
+}
+
+
+
