@@ -10,6 +10,7 @@ html {
     box-sizing: border-box;
     font-size:20px;
     color:$black;
+    scroll-behavior: smooth;
 }
 
 body {    
@@ -50,6 +51,5 @@ body {
     margin-top: 70px;
     @include sm(margin-top, 30px);
 }
-
 
 

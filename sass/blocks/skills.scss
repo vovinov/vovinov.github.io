@@ -1,39 +1,37 @@
 .skills {
-    padding: 80px 0;    
+    background-image: url(/img/poster.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 0;
+    padding: 40px 0;    
     @include md(margin-top, 0);
 }
 
 .skills__title {
-    margin:0;
-    padding:0;
 
     &--hide {
         @include visually-hidden();
     }
 }
 
-.skills__list {    
-    list-style: none;    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 150px);   
-    grid-template-rows: repeat(auto-fill, 150px);
-    grid-auto-rows: 150px; 
-    grid-gap: 10px;
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-items: center; 
+    width:  100%;
 }
 
 .skills__item { 
-    position: relative;
-    width:150px;    
-    background-image: linear-gradient(
-        to right, 
-        rgba(black, 0.5),
-        rgba($white, 0.5));           
-    background-position: center center;        
-    background-repeat:  no-repeat;       
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    background-color: rgba($white, 0.7);            
+    background-position: center;        
+    background-repeat: no-repeat;       
     background-size: cover; 
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
     &:hover {
         transform: translateY(-3px);
@@ -43,6 +41,7 @@
         }
         
         &::after {
+            height: max-content;
             opacity: 1;
         }
     }
@@ -60,15 +59,11 @@
 
     & img {  
         position: absolute;          
-        width:  100px;
-        height: 100px;        
+        width:  50px;
+        height: 50px;        
         top:50%;
         left:50%;
-        transform: translate(-50%, -50%); 
-
-        &:hover {
-            border: 5px solid black;
-        }  
+        transform: translate(-50%, -50%);  
     }     
 } 
 
@@ -78,9 +73,9 @@
     font-weight: 700;
     opacity: 1;
     position: absolute;
-    top:50%;
+    bottom: 10px;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     opacity: 0;
     z-index: 2;
     

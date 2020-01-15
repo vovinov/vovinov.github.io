@@ -6,6 +6,6 @@ module.exports = function() {
             }
         });
         $.gulp.watch('sass/**/*.scss', $.gulp.series('sass'));
-        $.gulp.watch('*.html', $.gulp.series('html'));           
+        $.gulp.watch('*.html').on('change', $.browserSync.reload);          
     });
 };

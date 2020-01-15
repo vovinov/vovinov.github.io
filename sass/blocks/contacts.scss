@@ -45,14 +45,21 @@
     font-size: 18px;
     text-decoration: none;
     color:$black;
-
-    & img {
-        position:absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        height: 20px;
-        width: 20px;
-    }
 }
 
+.contacts__icon {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    
+
+    &:hover {
+        box-shadow: 10px 10px 20px $white, 
+                    -10px 10px 20px $white,
+                    10px -10px 20px $white,
+                    -10px -10px 20px $white;
+    }
+
+    
+}

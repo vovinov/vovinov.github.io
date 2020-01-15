@@ -1,9 +1,5 @@
 .works {
-    padding: 40px;
-}
-
-.works__wrap {    
-    
+    padding: 60px 0 40px;
 }
 
 .works__title-hide {
@@ -13,31 +9,26 @@
 .works__categories {
     padding:0;
     margin:0;
+    width: 100%;
     display:flex;
     justify-content: space-around;
     align-items: center;    
     list-style: none;
-}
-
-.works__category {
-
-    &:hover {
-                
-        ::after {
-            opacity: 1;
-        }
-    }
     
 }
 
 .works__link {
     position: relative;
-    font-size: 20px;
+    font-size: 30px;
     color: $black;
     font-weight: 700;
     text-decoration: none;
     outline: none;
     cursor: pointer;
+
+    &:hover {
+        opacity: .5;
+    }
 
     &:active, 
     &:focus {
@@ -73,7 +64,8 @@
     position: relative;       
     grid-column: span 1;
     overflow: hidden;  
-    transition: all 250ms;        
+    transition: all 250ms;  
+    box-shadow: 5px 10px 20px $black;      
     
     &:hover {
         transform: scale(1.1); 

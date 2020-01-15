@@ -5,402 +5,361 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портфолио</title>    
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body>
-    <div class="container">
-        <header class="header">             
-            <nav>
-                <ul class="nav__list row">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="hamburger">
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                </div>
+                <nav class="nav__list">                    
                     <li class="nav__item">
                         <a href="#" class="nav__link nav__link--main">Главная</a>
                     </li> 
                     <li class="nav__item">
                         <a href="#about" class="nav__link nav__link--about">Знакомство</a>
-                    </li>                
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link nav__link--skills">Навыки</a>
-                    </li>
+                    </li>               
                     <li class="nav__item">
                         <a href="#works" class="nav__link nav__link--works">Портфолио</a>
                     </li>
                     <li class="nav__item">
                         <a href="#contacts" class="nav__link nav__link--contacts">Контакты</a>
                     </li>
-                </ul>
-            </nav>           
-            <div class="header__info row">
-                <h1 class="header__name">vyacheslav ovinov</h1>  
-                <p class="header_subtitle">front-end developer</p> 
-                <a href="https://yadi.sk/i/BIkdDxM5kHZaPw" class="header__btn">Скачать CV(.pdf)</a>
-            </div>     
-            <div class="header-news row">                
-                <div class="header-news__item">                       
-                    <p>Добавлен новый проект в портфолио!</p>
-                </div>             
-            </div>         
-        </header>
-        <main>    
-            <section class="about row" id="about">
-                <div class="about__left">                    
-                    <h3 class="about__title">
-                        Информация
-                    </h3>
-                    <h4 class="about__subtitle">Адрес</h4>
-                    <p class="about__text">Мячковский бульвар, д. 8, Москва, 109341, Россия</p>
-                    <h4 class="about__subtitle">Телефон</h4>
-                    <p class="about__text">+79152883251</p>
-                    <h4 class="about__subtitle">email</h4>
-                    <p class="about__text">v.v.ovinov@yandex.ru</p>
-                    <h4 class="about__subtitle">Дата и место рождения</h4>
-                    <p class="about__text">г. Видное, МО</p>
-                    <h4 class="about__subtitle">Национальность</h4>
-                    <p class="about__text mb-70">русский</p>
-                    <h3 class="about__title">навыки</h3>
-                    <ul class="about__skill">
-                        <p class="about__text">Design</p>
-                        <ul class="d-flex">
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                        </ul>
-                    </ul>
-                    <ul class="about__skill">
-                        <p class="about__text">UI / UX</p>
-                        <ul class="d-flex">
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                        </ul>
-                    </ul>
-                    <ul class="about__skill">
-                        <p class="about__text">HTML/CSS</p>
-                        <ul class="d-flex">
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                        </ul>
-                    </ul>
-                    <ul class="about__skill">
-                        <p class="about__text">JavaScript</p>
-                        <ul class="d-flex">
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                        </ul>
-                    </ul>
-                    <ul class="about__skill">
-                        <p class="about__text">Algoritms</p>
-                        <ul class="d-flex">
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                        </ul>
-                    </ul>
-                    <ul class="about__skill">
-                        <p class="about__text">JavaScript Frameworks</p>
-                        <ul class="d-flex">
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                        </ul>
-                    </ul>
-                    <h3 class="about__title mt-70">Хобби</h3>
-                    <p class="about__text mb-70">Чтение, настольные игры</p>
-                    <h3 class="about__title">Языки</h3>
-                    <ul class="about__skill">
-                        <p class="about__text">English</p>
-                        <ul class="d-flex">
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle-full.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                            <li class="about__dot">
-                                <img src="./img/circle.svg" alt="Dot">
-                            </li>
-                        </ul>
-                    </ul>
-                </div>
-                <div class="about__right">
-                    <h3 class="about__title">
-                        Характеристика
-                    </h3>
-                    <p class="about__text mb-70"> 
-                        Последнее время увлекся web разработкой и появилось огромное желание
-                        начать работать в данной сфере. Коммерческого опыта работы нет.
-                        Ответственный, отзывчивый, быстро схватываю новую информацию и готов к
-                        постоянному развитию и обучению.
-                    </p>
-                    <h3 class="about__title">
-                        Трудовая деятельность
-                    </h3>
-                    <ul>
-                        <li class="about__work">
-                            <p class="about__text about__text--bold">Редактор на ТВ, АО РБК-ТВ</p>
-                            <p class="about__text">Москва</p>
-                            <p class="about__text">Апр 2013 — Мар 2016</p>
-                            <ul class="about__responsibilities">
-                                <li>Работа в новостной редакции</li>
-                                <li>Поиск и сопровождение видеоматериала</li>
-                                <li>Составление плана сьемок по регионам</li>
-                                <li>Взаимодействие с пресс-службами ведомств, министерств</li>
-                                <li>Взаимодействие со службами федеральных телеканалов</li>      
+                </nav>
+            </div>
+        </div>  
+    </header>
+    <main> 
+        <section class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="intro__info">
+                        <h1 class="intro__name">vyacheslav ovinov</h1>  
+                        <p class="intro__subtitle">front-end developer</p> 
+                        <a href="https://yadi.sk/i/BIkdDxM5kHZaPw" class="intro__btn" target="blank">Скачать CV(.pdf)</a>
+                    </div>
+                </div>     
+                <div class="intro-news row">                
+                    <div class="intro-news__item">                       
+                        <p>Добавлен новый проект в портфолио!</p>
+                    </div>             
+                </div> 
+            </div>                      
+        </section>      
+        <div class="container">             
+            <section class="about" id="about">
+                <div class="row">
+                    <div class="about__left">                    
+                        <h3 class="about__title">Информация</h3>
+                        <h4 class="about__subtitle">Адрес</h4>
+                        <p class="about__text">Мячковский бульвар, д. 8, Москва, 109341, Россия</p>
+                        <h4 class="about__subtitle">Телефон</h4>
+                        <p class="about__text">+79152883251</p>
+                        <h4 class="about__subtitle">email</h4>
+                        <p class="about__text">v.v.ovinov@yandex.ru</p>
+                        <h4 class="about__subtitle">Дата и место рождения</h4>
+                        <p class="about__text">г. Видное, МО</p>
+                        <h4 class="about__subtitle">Национальность</h4>
+                        <p class="about__text mb-70">русский</p>
+                        <h3 class="about__title">навыки</h3>
+                        <ul class="about__skill">
+                            <p class="about__text">Design</p>
+                            <ul class="d-flex">
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
                             </ul>
-                        </li>
-                        <li class="about__work">
-                            <p class="about__text about__text--bold">Заместитель программного директора, АО РБК-ТВ</p>
-                            <p class="about__text inline">Москва</p>
-                            <p class="about__text">Апр 2016 — Июнь 2019</p>
-                            <ul class="about__responsibilities">
-                                <li>Составление ежедневной сетки вещания РБК-ТВ</li>
-                                <li>Замещение функции программного директора</li>     
+                        </ul>
+                        <ul class="about__skill">
+                            <p class="about__text">UI / UX</p>
+                            <ul class="d-flex">
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
                             </ul>
-                        </li>
-                    </ul>                    
-                    <h3 class="about__title mt-70">
-                        Образование
-                    </h3>
-                    <p class="about__text about__text--bold">Продюссер кино и ТВ, Государственный институт управления</p>
-                    <p  class="about__text">Москва</p>
-                    <p  class="about__text">Сент 2003 — Май 2008</p>
-                    <h3 class="about__title mt-70">
-                        Курсы
-                    </h3>
-                    <ul class="about__courses">
-                        <li class="about__course mb-30">
-                            <p class="about__text about__text--bold">HTML и CSS, уровень 1, HTML Academy</p>
-                            <span  class="about__text mb-30">Мая 2018 — Июн 2018</span>
-                        </li>
-                        <li class="about__course">
-                            <p class="about__text about__text--bold">JavaScript, уровень 1 , HTML Academy</p>
-                            <span  class="about__text">Сент. 2018 — Окт 2018</span>
-                        </li>
-                    </ul>                   
-                    <h3 class="about__title mt-70">
-                        Рекомендации
-                    </h3>
-                    <p class="about__text about__text--bold"> Анастасия Молодцова из АО РБК-ТВ</p>
-                    <span  class="about__text">8-926-076-57-52</span>
+                        </ul>
+                        <ul class="about__skill">
+                            <p class="about__text">HTML/CSS</p>
+                            <ul class="d-flex">
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                            </ul>
+                        </ul>
+                        <ul class="about__skill">
+                            <p class="about__text">JavaScript</p>
+                            <ul class="d-flex">
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                            </ul>
+                        </ul>
+                        <ul class="about__skill">
+                            <p class="about__text">Algoritms</p>
+                            <ul class="d-flex">
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                            </ul>
+                        </ul>
+                        <ul class="about__skill">
+                            <p class="about__text">JavaScript Frameworks</p>
+                            <ul class="d-flex">
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                            </ul>
+                        </ul>
+                        <h3 class="about__title mt-70">Хобби</h3>
+                        <p class="about__text mb-70">Чтение, настольные игры</p>
+                        <h3 class="about__title">Языки</h3>
+                        <ul class="about__skill">
+                            <p class="about__text">English</p>
+                            <ul class="d-flex">
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle-full.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                                <li class="about__dot">
+                                    <img src="./img/circle.svg" alt="Dot">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="about__right">
+                        <h3 class="about__title">
+                            Характеристика
+                        </h3>
+                        <p class="about__text mb-70"> 
+                            Последнее время увлекся web разработкой и появилось огромное желание
+                            начать работать в данной сфере. Коммерческого опыта работы нет.
+                            Ответственный, отзывчивый, быстро схватываю новую информацию и готов к
+                            постоянному развитию и обучению.
+                        </p>
+                        <h3 class="about__title">Трудовая деятельность</h3>
+                        <ul>
+                            <li class="about__work">
+                                <p class="about__text about__text--bold">Редактор на ТВ, АО РБК-ТВ</p>
+                                <p class="about__text">Москва</p>
+                                <p class="about__text">Апр 2013 — Мар 2016</p>
+                                <ul class="about__responsibilities">
+                                    <li>Работа в новостной редакции</li>
+                                    <li>Поиск и сопровождение видеоматериала</li>
+                                    <li>Составление плана сьемок по регионам</li>
+                                    <li>Взаимодействие с пресс-службами ведомств, министерств</li>
+                                    <li>Взаимодействие со службами федеральных телеканалов</li>      
+                                </ul>
+                            </li>
+                            <li class="about__work">
+                                <p class="about__text about__text--bold">Заместитель программного директора, АО РБК-ТВ</p>
+                                <p class="about__text inline">Москва</p>
+                                <p class="about__text">Апр 2016 — Июнь 2019</p>
+                                <ul class="about__responsibilities">
+                                    <li>Составление ежедневной сетки вещания РБК-ТВ</li>
+                                    <li>Замещение функции программного директора</li>     
+                                </ul>
+                            </li>
+                        </ul>                    
+                        <h3 class="about__title mt-70">Образование</h3>
+                        <p class="about__text about__text--bold">Продюссер кино и ТВ, Государственный институт управления</p>
+                        <p  class="about__text">Москва</p>
+                        <p  class="about__text">Сент 2003 — Май 2008</p>
+                        <h3 class="about__title mt-70">Курсы</h3>
+                        <ul class="about__courses">
+                            <li class="about__course mb-30">
+                                <p class="about__text about__text--bold">HTML и CSS, уровень 1, HTML Academy</p>
+                                <span  class="about__text mb-30">Мая 2018 — Июн 2018</span>
+                            </li>
+                            <li class="about__course">
+                                <p class="about__text about__text--bold">JavaScript, уровень 1 , HTML Academy</p>
+                                <span  class="about__text">Сент. 2018 — Окт 2018</span>
+                            </li>
+                        </ul>                   
+                        <h3 class="about__title mt-70">Рекомендации</h3>
+                        <p class="about__text about__text--bold"> Анастасия Молодцова из АО РБК-ТВ</p>
+                        <span  class="about__text">8-926-076-57-52</span>
+                    </div>
                 </div>
-            </section>
-            <section class="skills" id="skills">
-                    <div class="skills__wrap wrap">
-                        <h2 class="skills__title skills__title--hide">Skills</h2>
-                        <ul class="skills__list"> 
-                        <li class="skills__item skills__item--1">
-                            <img src="./img/html-svg.svg" alt="">
-                            <p class="skills__percent">90%</p>
-                        </li>                   
-                        <li class="skills__item skills__item--2">
-                            <img src="./img/css-svg.svg" alt="">
-                            <p class="skills__percent">90%</p>
-                        </li>                    
-                        <li class="skills__item skills__item--3">
-                            <img src="./img/gulp-svg.svg" alt="">
-                            <p class="skills__percent">80%</p>
-                        </li>
-                        <li class="skills__item skills__item--4">
-                            <img src="./img/js-svg.svg" alt="">
-                            <p class="skills__percent">60%</p>
-                        </li>
-                        <li class="skills__item skills__item--4">
-                            <img src="./img/nodejs-svg.svg" alt="">
-                            <p class="skills__percent">30%</p>
-                        </li>
-                        <li class="skills__item">
-                            <img src="./img/npm-svg.svg" alt="">
-                            <p class="skills__percent">30%</p>
-                        </li>
-                        <li class="skills__item">
-                            <img src="./img/sass-svg.svg" alt="">
-                            <p class="skills__percent">70%</p>
-                        </li>
-                        <li class="skills__item">
-                            <img src="./img/bootstrap-svg.svg" alt="">
-                            <p class="skills__percent">20%</p>
-                        </li>
-                        <li class="skills__item">
-                            <img src="./img/php-svg.svg" alt="">
-                            <p class="skills__percent">40%</p>
-                        </li>   
-                        <li class="skills__item">
-                            <img src="./img/wordpress-svg.svg" alt="">
-                            <p class="skills__percent">50%</p>
-                        </li>     
-                        <li class="skills__item">
-                            <img src="./img/photoshop-svg.svg" alt="">
-                            <p class="skills__percent">30%</p>
-                        </li>                                                   
-                    </ul>
-                </div>
-
             </section>
             <section class="works" id="works">            
-                <div class="works__wrap wrap">
-                    <h2 class="works__title-hide">Works</h2>
+                <h2 class="works__title-hide">Works</h2>
+                <div class="row">
                     <ul class="works__categories">
                         <li class="works__category">
                             <a class="works__link works__link--all" data-filter="All">All</a>
                         </li>
                         <li class="works__category">
-                            <a class="works__link" data-filter="Site">Site</a>
+                            <a class="works__link" data-filter="Site">
+                                <i class="fas fa-code fa-2x"></i>
+                            </a>
                         </li>
                         <li class="works__category">
-                            <a class="works__link" data-filter="Javascript">Javascript</a>
+                            <a class="works__link" data-filter="Javascript">
+                                <i class="fab fa-js fa-2x"></i>
+                            </a>
                         </li>
                         <li class="works__category">
-                            <a class="works__link" data-filter="Form">Form</a>
+                            <a class="works__link" data-filter="Form">
+                                <i class="fas fa-table fa-2x"></i>
+                            </a>
                         </li>                    
                     </ul>
-                    <ul class="works__list">
-                        <li class="works__item works__item--nerds" data-cat="Site">
-                            <img src="./img/nerds.png" alt="Nerds">                        
-                            <div class="works__block">
-                                <a href="./assets/nerds/index.html" class="works__site">
-                                    Главная
-                                </a>
-                                <a href="./assets/nerds/nerds-catalog.html" class="works__site">
-                                    Каталог
-                                </a>
-                            </div>
-                        </li>
-                        <li class="works__item" data-cat="Site">
-                            <img src="./img/granit.png" alt="Granit">     
-                            <div class="works__block">
-                                <a class="works__site" href="./assets/granit/index.html">
-                                    Главная
-                                </a>
-                            </div>                
-                        </li>  
-                        <li class="works__item" data-cat="Form">
-                            <img src="./img/violet.png" alt="Violet">     
-                            <div class="works__block">
-                                <a class="works__site" href="./assets/violet/index.html">
-                                    Открыть
-                                </a>
-                            </div>                
-                        </li>
-                        <li class="works__item" data-cat="Javascript">
-                            <img src="./img/keksobooking.png" alt="Keksobooking">     
-                            <div class="works__block">
-                                <a class="works__site" href="./assets/keksobooking/index.html">
-                                    Открыть
-                                </a>
-                            </div>                
-                        </li>    
-                    </ul>
-                </div>            
+                </div>             
+                <ul class="works__list">
+                    <li class="works__item works__item--nerds" data-cat="Site">
+                        <img src="./img/nerds.png" alt="Nerds">                        
+                        <div class="works__block">
+                            <a href="./assets/nerds/index.html" class="works__site">
+                                Главная
+                            </a>
+                            <a href="./assets/nerds/nerds-catalog.html" class="works__site">
+                                Каталог
+                            </a>
+                        </div>
+                    </li>
+                    <li class="works__item" data-cat="Site">
+                        <img src="./img/granit.png" alt="Granit">     
+                        <div class="works__block">
+                            <a class="works__site" href="./assets/granit/index.html">
+                                Главная
+                            </a>
+                        </div>                
+                    </li>  
+                    <li class="works__item" data-cat="Form">
+                        <img src="./img/violet.png" alt="Violet">     
+                        <div class="works__block">
+                            <a class="works__site" href="./assets/violet/index.html">
+                                Открыть
+                            </a>
+                        </div>                
+                    </li>
+                    <li class="works__item" data-cat="Javascript">
+                        <img src="./img/keksobooking.png" alt="Keksobooking">     
+                        <div class="works__block">
+                            <a class="works__site" href="./assets/keksobooking/index.html">
+                                Открыть
+                            </a>
+                        </div>                
+                    </li>    
+                </ul>                       
             </section>
-        </main>
-        <footer class="contacts" id="contacts">
+        </div>
+    </main>
+    <footer class="contacts" id="contacts">
+        <div class="container">
             <div class="row justify-content-space-between">
                 <h3 class="contacts__heading">контакты</h3>
                 <ul class="contacts__list d-flex justify-content-center">
                     <li class="contacts__item">
-                        <a class="contacts__link" href="https://www.facebook.com/slavaov">
-                            <img src="/img/contacts-facebook.svg" alt="Facebook">
+                        <a class="contacts__link" href="https://www.facebook.com/slavaov" target="blank">
+                            <i class="contacts__icon fab fa-facebook"></i>
                         </a>
                     </li>
                     <li class="contacts__item">
-                        <a class="contacts__link" href="https://github.com/vovinov">
-                            <img src="/img/contacts-github.svg" alt="Github">
+                        <a class="contacts__link" href="https://github.com/vovinov" target="blank">
+                            <i class="contacts__icon fab fa-github"></i>
                         </a>
                     </li>
                     <li class="contacts__item">
                         <a class="contacts__link" href="mailto:v.v.ovinov@yandex.ru">
-                            <img src="/img/contacts-email.svg" alt="Email">
+                            <i class="contacts__icon fas fa-envelope"></i>
                         </a>
                     </li>
                     <li class="contacts__item">
                         <a class="contacts__link" href="tel:+79152883251">
-                            <img src="/img/contacts-phone.svg" alt="Phone">
+                            <i class="contacts__icon fas fa-phone"></i>
                         </a>
                     </li>
                 </ul>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/scripts.js"></script>
     <script src="./js/anime.min.js"></script>

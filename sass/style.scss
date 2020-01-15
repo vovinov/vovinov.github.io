@@ -1,14 +1,18 @@
 
 @import "./normalize";
 @import "./fonts";
+
 @import "./mixins";
 @import "./variables";
 @import "./smart-grid";
 @import "./core";
+@import "./animation";
 
 @import "./blocks/header";
+@import "./blocks/intro";
 @import "./blocks/about";
 @import "./blocks/works";
 @import "./blocks/skills";
 @import "./blocks/contacts";
+
 
