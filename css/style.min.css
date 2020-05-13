@@ -838,7 +838,6 @@ body {
   width: 100%; }
 
 .work-card {
-  cursor: pointer;
   margin: 20px 30px 20px 30px;
   width: 320px;
   height: 300px;
@@ -886,6 +885,7 @@ body {
           transform: perspective(600px) rotateY(0deg); }
 
 .work-card__content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,15 +908,13 @@ body {
           flex-grow: 1; }
 
 .work-card__site {
-  display: inline;
   font-size: 30px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #666666;
+  color: #AAAAAA;
   font-weight: 400;
-  text-align: right;
-  -webkit-transition: all .5s;
-  transition: all .5s; }
+  margin-left: auto;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
   .work-card__site:hover {
     color: #000; }
 
