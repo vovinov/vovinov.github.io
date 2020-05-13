@@ -3,7 +3,7 @@
 $(document).ready(function(){
         
     // Фильтр
-    var posts = $('.works__item');     
+    var posts = $('.work-card');     
 
     $('.works__category a').click(function() { 
         var customType = $( this ).data('filter');        
