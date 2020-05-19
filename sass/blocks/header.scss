@@ -5,22 +5,82 @@
     position: sticky;
     top:0;
     z-index: 100;
-    box-shadow: 0 5px 30px rgba($white, 0.7);
-    animation-name: slideInOpacity;
-    animation-duration: 3s;
+    
+}
 
-    // @include xxs(padding, 0);
+.header--shadow {
+    box-shadow: 3px 3px 20px rgba($color: $black, $alpha: 0.5);
+}
+
+.header__content {
+    @include row-flex();
+    @include col();
+    align-items: center;
+}
+
+.header__title {
+    @include size(4);
+    @include size-sm(12);
+    flex-grow: 1;
+
+    @include md(margin-bottom, 15px);
+    @include xxs(margin-bottom, 0);
+}
+
+.header__name {     
+    font-weight: 700;  
+    font-size: 30px;    
+    line-height: 1.2;  
+    text-transform: uppercase; 
+    margin-bottom: 5px;   
+
+    @include md(text-align, center);
+    @include xxs(text-align, right);
+    @include xxs(font-size, 20px);
+}; 
+
+.header__subtitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+
+    @include md(text-align, center);
+    @include xxs(text-align, right);
+    @include xxs(font-size, 12px);
+};
+
+.header__link {
+    @include md(width, 100%);
+    @include md(text-align, center);
+}
+
+.header__btn {
+    @include btn(transparent, $black);
+    padding: 18px 30px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba($color: $black, $alpha: 0.5);
+    transition: all .3s;
+    border-radius: 5px;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 3px 3px 20px rgba($color: $black, $alpha: 0.8);
+    }
+};
+
+.nav {
+    border-top: 3px solid rgba($black, 0.1); 
+    margin-top: 20px;
+    @include size(12);
 }
 
 .nav__list {  
     display: flex;
-    flex-wrap: wrap;  
-    @include col();
-    @include size(8);
-    @include size-md(10);
+    flex-wrap: wrap;   
+    width: 100%;
     justify-content: space-around; 
     list-style: none;   
-
     @include sm(padding-left, 0);
 };
 
@@ -55,9 +115,18 @@
 }
 
 @media screen and (max-width: 425px) {
+
+    .header__link { display: none; }
+
+    .nav {
+        margin-top: 0;
+        border-top: none;
+    }
+
     .nav__list {
-        position:fixed;
-        margin-left: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
         height: 100%;
         background-color: $grey;
         width: 100%;
@@ -67,6 +136,7 @@
         padding-top: 100px;
         clip-path: circle(100px at 10% -20%);
         transition: all .5s ease-in-out;
+        
     }
 
     .nav__list.open {

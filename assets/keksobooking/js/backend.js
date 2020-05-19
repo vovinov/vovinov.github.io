@@ -1,7 +1,7 @@
 'use strict';
 (function() {
   var URL = {
-    get: 'https://js.dump.academy/keksobooking/data',
+    get: 'https://cors-anywhere.herokuapp.com/js.dump.academy/keksobooking/data',
     post: 'https://js.dump.academy/keksobooking'
   };
 

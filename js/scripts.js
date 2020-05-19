@@ -42,3 +42,7 @@ Array.from(navLinks).forEach( link => {
     })
 });
 
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    window.pageYOffset > 0 ? header.classList.add('header--shadow') : header.classList.remove('header--shadow');
+});

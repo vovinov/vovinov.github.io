@@ -11,48 +11,46 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
+            <div class="header__content">
                 <div class="hamburger">
                     <div class="hamburger__line"></div>
                     <div class="hamburger__line"></div>
                     <div class="hamburger__line"></div>
                 </div>
-                <nav class="nav__list">                    
-                    <li class="nav__item">
-                        <a href="#" class="nav__link nav__link--main">Главная</a>
-                    </li> 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link nav__link--about">Знакомство</a>
-                    </li>               
-                    <li class="nav__item">
-                        <a href="#works" class="nav__link nav__link--works">Портфолио</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contacts" class="nav__link nav__link--contacts">Контакты</a>
-                    </li>
+                <div class="header__title">
+                    <h1 class="header__name">вячеслав овинов</h1>  
+                    <p class="header__subtitle">front-end разработчик</p>    
+                </div>     
+                <div class="header__link">
+                    <a href="https://yadi.sk/i/BIkdDxM5kHZaPw" class="header__btn" target="blank">Скачать резюме</a>
+                </div>           
+                <nav class="nav"> 
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--main">Главная</a>
+                        </li> 
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link nav__link--about">Знакомство</a>
+                        </li>               
+                        <li class="nav__item">
+                            <a href="#works" class="nav__link nav__link--works">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link nav__link--contacts">Контакты</a>
+                        </li>
+                    </ul>                    
                 </nav>
             </div>
         </div>  
     </header>
-    <main> 
-        <section class="intro">
-            <div class="container">
-                <div class="row">
-                    <div class="intro__info">
-                        <h1 class="intro__name">vyacheslav ovinov</h1>  
-                        <p class="intro__subtitle">front-end developer</p> 
-                        <a href="https://yadi.sk/i/BIkdDxM5kHZaPw" class="intro__btn" target="blank">Скачать CV(.pdf)</a>
-                    </div>
-                </div>    
-            </div>                      
-        </section>      
+    <main>   
         <div class="container">             
             <section class="about" id="about">
                 <div class="row">
                     <div class="about__left">                    
                         <h3 class="about__title">Информация</h3>
                         <h4 class="about__subtitle">Адрес</h4>
-                        <p class="about__text">Мячковский бульвар, д. 8, Москва, 109341, Россия</p>
+                        <p class="about__text">г. Москва, Россия</p>
                         <h4 class="about__subtitle">Телефон</h4>
                         <p class="about__text">+79152883251</p>
                         <h4 class="about__subtitle">email</h4>
@@ -63,159 +61,165 @@
                         <p class="about__text mb-70">русский</p>
                         <h3 class="about__title">навыки</h3>
                         <ul class="about__skill">
-                            <p class="about__text">Design</p>
-                            <ul class="d-flex">
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                            </ul>
+                            <li class="about__text">Design</li>
+                            <li>
+                                <ul class="d-flex">
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                         <ul class="about__skill">
-                            <p class="about__text">UI / UX</p>
-                            <ul class="d-flex">
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                            </ul>
+                            <li class="about__text">UI / UX</li>
+                            <li>
+                                <ul class="d-flex">
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                </ul> 
+                            </li>
                         </ul>
                         <ul class="about__skill">
-                            <p class="about__text">HTML/CSS</p>
-                            <ul class="d-flex">
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                            </ul>
+                            <li class="about__text">HTML/CSS</li>
+                            <li>
+                                <ul class="d-flex">
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                </ul>
+                            </li>                            
                         </ul>
                         <ul class="about__skill">
-                            <p class="about__text">JavaScript</p>
-                            <ul class="d-flex">
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                            </ul>
+                            <li class="about__text">JavaScript</li>
+                            <li>
+                                <ul class="d-flex">
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                </ul>
+                            </li>                            
                         </ul>
                         <ul class="about__skill">
-                            <p class="about__text">Algoritms</p>
-                            <ul class="d-flex">
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                            </ul>
+                            <li class="about__text">Algoritms</li>
+                            <li>
+                                <ul class="d-flex">
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                </ul>
+                            </li>                            
                         </ul>
                         <ul class="about__skill">
-                            <p class="about__text">JavaScript Frameworks</p>
-                            <ul class="d-flex">
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                            </ul>
+                            <li class="about__text">JavaScript Frameworks</li>
+                            <li>
+                                <ul class="d-flex">
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                </ul>
+                            </li>                            
                         </ul>
                         <h3 class="about__title mt-70">Хобби</h3>
                         <p class="about__text mb-70">Чтение, настольные игры</p>
                         <h3 class="about__title">Языки</h3>
                         <ul class="about__skill">
-                            <p class="about__text">English</p>
-                            <ul class="d-flex">
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle-full.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                                <li class="about__dot">
-                                    <img src="./img/circle.svg" alt="Dot">
-                                </li>
-                            </ul>
+                            <li class="about__text">English</li>
+                            <li>
+                                <ul class="d-flex">
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle-full.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                    <li class="about__dot">
+                                        <img src="./img/circle.svg" alt="Dot">
+                                    </li>
+                                </ul>
+                            </li>                            
                         </ul>
                     </div>
                     <div class="about__right">
-                        <h3 class="about__title">
-                            Характеристика
-                        </h3>
-                        <p class="about__text mb-70"> 
-                            Последнее время увлекся web разработкой и появилось огромное желание
-                            начать работать в данной сфере. Коммерческого опыта работы нет.
-                            Ответственный, отзывчивый, быстро схватываю новую информацию и готов к
-                            постоянному развитию и обучению.
-                        </p>
+                        <p class="about__text mb-70">Начинающий разработчик с небольшим опытом во front-end направлении. Ответственный, инициативный, бесконфликтный, нацеленный на постоянное саморазвитие (самообучение), обладающий умением работать в команде. Уверенный технический английский язык. Без вредных привычек.</p>
                         <h3 class="about__title">Трудовая деятельность</h3>
                         <ul>
                             <li class="about__work">
@@ -255,9 +259,9 @@
                                 <span  class="about__text">Сент. 2018 — Окт 2018</span>
                             </li>
                         </ul>                   
-                        <h3 class="about__title mt-70">Рекомендации</h3>
-                        <p class="about__text about__text--bold"> Анастасия Молодцова из АО РБК-ТВ</p>
-                        <span  class="about__text">8-926-076-57-52</span>
+                        <h3 class="about__title mt-70">Конференции, встречи</h3>
+                        <p class="about__text about__text--bold">RamblerFront & Meetup #7</p>
+                        <span  class="about__text">11.07.2019</span>
                     </div>
                 </div>
             </section>
