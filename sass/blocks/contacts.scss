@@ -1,65 +1,32 @@
 .contacts {
-    background: black;
-}
-
-.contacts__heading {
-    @include col();
-    @include size(4);
-    @include size-xs(12);
-    @include shift-left(1);
-    @include shift-sm-left(0);
-    text-align: center;    
-    padding: 40px 0;
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 700;
-    color: $white;
-}
-
-.contacts__list {
-    @include col();
-    @include size(4);
-    @include size-md(5);
-    @include size-sm(6);
-    @include size-xs(12);
-    @include shift-right(1);
-    @include shift-sm-right(0);
-    @include xs(padding-bottom, 30px); 
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__item {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background: $white;
-    margin-right: 20px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 2px solid $white;
+  transition: all .3s ease-in-out;
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child { margin-right: 0; }
+
+  &:hover { border: 2px solid $black; }
 }
 
 .contacts__link {
-    font-size: 18px;
-    text-decoration: none;
-    color:$black;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $black;
+
+  &:hover { color: $black; }
 }
 
-.contacts__icon {
-    position:absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
-    
-
-    &:hover {
-        box-shadow: 10px 10px 20px $white, 
-                    -10px 10px 20px $white,
-                    10px -10px 20px $white,
-                    -10px -10px 20px $white;
-    }
-
-    
-}

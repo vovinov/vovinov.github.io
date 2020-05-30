@@ -1,48 +1,13 @@
-'use strict';
 
-$(document).ready(function(){
-        
-    // Фильтр
-    var posts = $('.work-card');     
+// Slider - works
 
-    $('.works__category a').click(function() { 
-        var customType = $( this ).data('filter');        
+$(document).ready(function() {
 
-        posts
-            .hide()
-            .filter(function () {
-                return $(this).data('cat') === customType;
-            })
-            .show();
+    // Slider - works
+    $('.works__list').slick({
+        slidesToShow: 1,
+        fade: true,
+        // autoplay: true,
+        // autoplaySpeed: 5000
     });
-
-    $('.works__link--all').click(function() {
-        posts.show();
-    })
-});
-
-
-const hamburger = document.querySelector('.hamburger');
-const navList = document.querySelector('.nav__list');
-const navLinks = document.querySelectorAll('.nav__link');
-const open = document.querySelector('.open');
-const nav = document.querySelector('nav');
-
-hamburger.addEventListener('click', () => {
-    navList.classList.toggle('open');
-})
-
-
-
-Array.from(navLinks).forEach( link => {
-    link.addEventListener('click', () => {
-        if (nav.classList.contains('open')) {
-            navList.classList.remove('open');
-        }
-    })
-});
-
-document.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    window.pageYOffset > 0 ? header.classList.add('header--shadow') : header.classList.remove('header--shadow');
 });

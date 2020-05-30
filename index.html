@@ -4,414 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Портфолио</title>    
+    <title>Vyacheslav Ovinov - Front-end developer</title>
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <div class="hamburger">
-                    <div class="hamburger__line"></div>
-                    <div class="hamburger__line"></div>
-                    <div class="hamburger__line"></div>
-                </div>
                 <div class="header__title">
-                    <h1 class="header__name">Vyacheslav Ovinov</h1>  
-                    <p class="header__subtitle">Front-end developer</p>    
-                </div>     
+                    <h1 class="header__name">Vyacheslav Ovinov</h1>
+                    <p class="header__subtitle">Front-end developer</p>
+                    <ul class="contacts header__contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="tel:+79152883251">
+                                <i class="contacts__icon fas fa-phone"></i>
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="mailto:v.v.ovinov@yandex.ru">
+                                <i class="contacts__icon fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="https://www.facebook.com/slavaov" target="blank">
+                                <i class="contacts__icon fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="https://github.com/vovinov" target="blank">
+                                <i class="contacts__icon fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="header__link">
                     <a href="https://yadi.sk/i/CnSzDf_Z11U3HQ" class="header__btn" target="blank">Download CV</a>
-                </div>           
-                <nav class="nav"> 
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--main">Главная</a>
-                        </li> 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link nav__link--about">Знакомство</a>
-                        </li>               
-                        <li class="nav__item">
-                            <a href="#works" class="nav__link nav__link--works">Портфолио</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contacts" class="nav__link nav__link--contacts">Контакты</a>
-                        </li>
-                    </ul>                    
-                </nav>
-            </div>
-        </div>  
-    </header>
-    <main>   
-        <div class="container">             
-            <section class="about" id="about">
-                <div class="row">
-                    <div class="about__left">                    
-                        <h3 class="about__title">Информация</h3>
-                        <h4 class="about__subtitle">Адрес</h4>
-                        <p class="about__text">г. Москва, Россия</p>
-                        <h4 class="about__subtitle">Телефон</h4>
-                        <p class="about__text">+79152883251</p>
-                        <h4 class="about__subtitle">email</h4>
-                        <p class="about__text">v.v.ovinov@yandex.ru</p>
-                        <h4 class="about__subtitle">Дата и место рождения</h4>
-                        <p class="about__text">г. Видное, МО</p>
-                        <h4 class="about__subtitle">Национальность</h4>
-                        <p class="about__text mb-70">русский</p>
-                        <h3 class="about__title">навыки</h3>
-                        <ul class="about__skill">
-                            <li class="about__text">Design</li>
-                            <li>
-                                <ul class="d-flex">
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="about__skill">
-                            <li class="about__text">UI / UX</li>
-                            <li>
-                                <ul class="d-flex">
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                </ul> 
-                            </li>
-                        </ul>
-                        <ul class="about__skill">
-                            <li class="about__text">HTML/CSS</li>
-                            <li>
-                                <ul class="d-flex">
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                </ul>
-                            </li>                            
-                        </ul>
-                        <ul class="about__skill">
-                            <li class="about__text">JavaScript</li>
-                            <li>
-                                <ul class="d-flex">
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                </ul>
-                            </li>                            
-                        </ul>
-                        <ul class="about__skill">
-                            <li class="about__text">Algoritms</li>
-                            <li>
-                                <ul class="d-flex">
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                </ul>
-                            </li>                            
-                        </ul>
-                        <ul class="about__skill">
-                            <li class="about__text">JavaScript Frameworks</li>
-                            <li>
-                                <ul class="d-flex">
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                </ul>
-                            </li>                            
-                        </ul>
-                        <h3 class="about__title mt-70">Хобби</h3>
-                        <p class="about__text mb-70">Чтение, настольные игры</p>
-                        <h3 class="about__title">Языки</h3>
-                        <ul class="about__skill">
-                            <li class="about__text">English</li>
-                            <li>
-                                <ul class="d-flex">
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle-full.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                    <li class="about__dot">
-                                        <img src="./img/circle.svg" alt="Dot">
-                                    </li>
-                                </ul>
-                            </li>                            
-                        </ul>
-                    </div>
-                    <div class="about__right">
-                        <p class="about__text mb-70">Начинающий разработчик с небольшим опытом во front-end направлении. Ответственный, инициативный, бесконфликтный, нацеленный на постоянное саморазвитие (самообучение), обладающий умением работать в команде. Уверенный технический английский язык. Без вредных привычек.</p>
-                        <h3 class="about__title">Трудовая деятельность</h3>
-                        <ul>
-                            <li class="about__work">
-                                <p class="about__text about__text--bold">Редактор на ТВ, АО РБК-ТВ</p>
-                                <p class="about__text">Москва</p>
-                                <p class="about__text">Апр 2013 — Мар 2016</p>
-                                <ul class="about__responsibilities">
-                                    <li>Работа в новостной редакции</li>
-                                    <li>Поиск и сопровождение видеоматериала</li>
-                                    <li>Составление плана сьемок по регионам</li>
-                                    <li>Взаимодействие с пресс-службами ведомств, министерств</li>
-                                    <li>Взаимодействие со службами федеральных телеканалов</li>      
-                                </ul>
-                            </li>
-                            <li class="about__work">
-                                <p class="about__text about__text--bold">Заместитель программного директора, АО РБК-ТВ</p>
-                                <p class="about__text inline">Москва</p>
-                                <p class="about__text">Апр 2016 — Июнь 2019</p>
-                                <ul class="about__responsibilities">
-                                    <li>Составление ежедневной сетки вещания РБК-ТВ</li>
-                                    <li>Замещение функции программного директора</li>     
-                                </ul>
-                            </li>
-                        </ul>                    
-                        <h3 class="about__title mt-70">Образование</h3>
-                        <p class="about__text about__text--bold">Продюссер кино и ТВ, Государственный институт управления</p>
-                        <p  class="about__text">Москва</p>
-                        <p  class="about__text">Сент 2003 — Май 2008</p>
-                        <h3 class="about__title mt-70">Курсы</h3>
-                        <ul class="about__courses">
-                            <li class="about__course mb-30">
-                                <p class="about__text about__text--bold">HTML и CSS, уровень 1, HTML Academy</p>
-                                <span  class="about__text mb-30">Мая 2018 — Июн 2018</span>
-                            </li>
-                            <li class="about__course">
-                                <p class="about__text about__text--bold">JavaScript, уровень 1 , HTML Academy</p>
-                                <span  class="about__text">Сент. 2018 — Окт 2018</span>
-                            </li>
-                        </ul>                   
-                        <h3 class="about__title mt-70">Конференции, встречи</h3>
-                        <p class="about__text about__text--bold">RamblerFront & Meetup #7</p>
-                        <span  class="about__text">11.07.2019</span>
-                    </div>
                 </div>
-            </section>
-            <section class="works" id="works">            
-                <h2 class="works__title-hide">Works</h2>
-                <div class="row">
-                    <ul class="works__categories">
-                        <li class="works__category">
-                            <a class="works__link works__link--all" data-filter="All">All</a>
-                        </li>
-                        <li class="works__category">
-                            <a class="works__link" data-filter="Site">
-                                <i class="fas fa-code fa-2x"></i>
-                            </a>
-                        </li>
-                        <li class="works__category">
-                            <a class="works__link" data-filter="Javascript">
-                                <i class="fab fa-js fa-2x"></i>
-                            </a>
-                        </li>
-                        <li class="works__category">
-                            <a class="works__link" data-filter="React">
-                                <i class="fab fa-react fa-2x"></i>
-                            </a>
-                        </li>                    
-                    </ul>
-                </div>  
-                <div class="row">
-                    <ul class="works__list">
-                        <li class="work-card" data-cat="Site">                          
-                            <div class="work-card__front">
-                                <img class="work-card__img" src="./img/nerds.png" alt="Nerds">                        
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="works">
+                <ul class="works__list">
+                    <li class="work-card">
+                        <div class="work-card__picture">
+                            <img class="work-card__img" src="./img/book-shop.jpg" alt="BookShop">
+                        </div>
+                        <div class="work-card__info">
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">BookShop</h3>
+                                <p class="work-card__description">Book Store Online shop</p>
                             </div>
-                            <div class="work-card__back">
-                                <div class="work-card__content">
-                                    <h3 class="work-card__title">Nerds</h3>
-                                    <p class="work-card__description">Учебный проект по вёрстке из курса "HTML Academy"</p>                                    
-                                    <a href="./assets/nerds/index.html" class="work-card__site" target="blank">&rarr;</a>
-                                </div>
-                            </div>                 
-                        </li>
-                        <li class="work-card" data-cat="React">
-                            <div class="work-card__front">
-                                <img class="work-card__img" src="./img/book-shop.jpg" alt="BookShop">                        
+                            <a class="work-card__site" href="https://books-shop-place.herokuapp.com/" target="blank">open</a>
+                        </div>
+                    </li>
+                    <li class="work-card">
+                        <div class="work-card__picture">
+                            <img class="work-card__img" src="./img/hardclean.png" alt="Hardclean">
+                        </div>
+                        <div class="work-card__info">
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">HardClean</h3>
+                                <p class="work-card__description">Commercial project</p>
                             </div>
-                            <div class="work-card__back">
-                                <div class="work-card__content">
-                                    <h3 class="work-card__title">BookShop</h3>
-                                    <p class="work-card__description">Онлайн-магазин по продаже книг. Практика React, Redux</p>
-                                    <a href="https://books-shop-place.herokuapp.com/" class="work-card__site" target="blank">&rarr;</a>
-                                </div>
+                            <a class="work-card__site" href="https://books-shop-place.herokuapp.com/" target="blank">open</a>
+                        </div>
+                    </li>
+                    <li class="work-card">
+                        <div class="work-card__picture">
+                            <img class="work-card__img" src="./img//rambler-test.png" alt="Rambler-test">
+                        </div>
+                        <div class="work-card__info">
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Rambler-test</h3>
+                                <p class="work-card__description">Test task from Rambler Group</p>
                             </div>
-                        </li>
-                        <li class="work-card" data-cat="Site">
-                            <div class="work-card__front">
-                                <img class="work-card__img" src="./img/granit.png" alt="Granit">                        
-                            </div>
-                            <div class="work-card__back">
-                                <div class="work-card__content">
-                                    <h3 class="work-card__title">Granit</h3>
-                                    <p class="work-card__description">Практика по верстке</p>
-                                    <a href="./assets/granit/index.html" class="work-card__site" target="blank">&rarr;</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work-card" data-cat="React">
-                            <div class="work-card__front">
-                                <img class="work-card__img" src="./img/exchange.png" alt="Quick-exchange">                        
-                            </div>
-                            <div class="work-card__back">
-                                <div class="work-card__content">
-                                    <h3 class="work-card__title">Quick-exchange</h3>
-                                    <p class="work-card__description">Небольшое приложение, практика по React</p>
-                                    <a href="https://vovinov.github.io/quick-exchange" class="work-card__site" target="blank">&rarr;</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work-card" data-cat="Javascript">
-                            <div class="work-card__front">
-                                <img class="work-card__img" src="./img/keksobooking.png" alt="Keksobooking">                        
-                            </div>
-                            <div class="work-card__back">
-                                <div class="work-card__content">
-                                    <h3 class="work-card__title">Keksobooking</h3>
-                                    <p class="work-card__description">Учебный проект по языку Javascript из курса "HTML Academy"</p>
-                                    <a href="./assets/keksobooking/index.html" class="work-card__site" target="blank">&rarr;</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work-card" data-cat="React">
-                            <div class="work-card__front">
-                                <img class="work-card__img" src="./img/hardclean.png" alt="Hardclean">                        
-                            </div>
-                            <div class="work-card__back">
-                                <div class="work-card__content">
-                                    <h3 class="work-card__title">HardClean</h3>
-                                    <p class="work-card__description">Коммерческий проект. Дизайн, верстка, логика. Калькулятор - React</p>
-                                    <a href="https://hardclean.ru" class="work-card__site" target="blank">&rarr;</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work-card" data-cat="React">
-                            <div class="work-card__front">
-                                <img class="work-card__img" src="./img//rambler-test.png" alt="Rambler-test">                        
-                            </div>
-                            <div class="work-card__back">
-                                <div class="work-card__content">
-                                    <h3 class="work-card__title">Rambler-test</h3>
-                                    <p class="work-card__description">Тестовое задание от Rambler Group</p>
-                                    <a href="https://vovinov.github.io/rambler-test" class="work-card__site" target="blank">&rarr;</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>    
-                </div>                          
+                            <a class="work-card__site" href="https://books-shop-place.herokuapp.com/" target="blank">open</a>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
-    <footer class="contacts" id="contacts">
-        <div class="container">
-            <div class="row justify-content-space-between">
-                <h3 class="contacts__heading">контакты</h3>
-                <ul class="contacts__list d-flex justify-content-center">
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="https://www.facebook.com/slavaov" target="blank">
-                            <i class="contacts__icon fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="https://github.com/vovinov" target="blank">
-                            <i class="contacts__icon fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="mailto:v.v.ovinov@yandex.ru">
-                            <i class="contacts__icon fas fa-envelope"></i>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="tel:+79152883251">
-                            <i class="contacts__icon fas fa-phone"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/scripts.js"></script>
-    <script src="./js/anime.min.js"></script>
-    <script src="./js/animate.js"></script>
 </body>
 </html>

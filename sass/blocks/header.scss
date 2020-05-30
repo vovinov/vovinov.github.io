@@ -1,164 +1,80 @@
-
 .header {
-    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
     background-color: $grey;
-    position: sticky;
-    top:0;
-    z-index: 100;
-    
-}
-
-.header--shadow {
-    box-shadow: 3px 3px 20px rgba($color: $black, $alpha: 0.5);
+    margin-bottom: 30px;
+    clip-path: polygon(100% 0, 100% 70%, 35% 70%, 29% 100%, 0 100%, 0 0);
 }
 
 .header__content {
-    @include row-flex();
-    @include col();
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-.header__title {
-    @include size(4);
-    @include size-sm(12);
-    flex-grow: 1;
-
-    @include md(margin-bottom, 15px);
-    @include xxs(margin-bottom, 0);
-}
+.header__title { flex-grow: 1; }
 
 .header__name {     
     font-weight: 700;  
-    font-size: 30px;    
-    line-height: 1.2;  
-    text-transform: uppercase; 
-    margin-bottom: 5px;   
-
-    @include md(text-align, center);
-    @include xxs(text-align, right);
-    @include xxs(font-size, 20px);
+    font-size: 30px;
+    text-transform: uppercase;
 }; 
 
 .header__subtitle {
     font-size: 16px;
     text-transform: uppercase;
     font-style: italic;
-
-    @include md(text-align, center);
-    @include xxs(text-align, right);
-    @include xxs(font-size, 12px);
+    margin-bottom: 5px;
 };
 
 .header__link {
-    @include md(width, 100%);
-    @include md(text-align, center);
+    align-self: flex-start;
 }
 
 .header__btn {
-    @include btn(transparent, $black);
-    padding: 18px 30px;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 7px 20px;
     display: inline-block;
     text-align: center;
-    box-shadow: 3px 3px 10px rgba($color: $black, $alpha: 0.5);
+    box-shadow: 3px 3px 10px rgba($black, 0.5);
     transition: all .3s;
     border-radius: 5px;
 
     &:hover {
         transform: scale(1.05);
-        box-shadow: 3px 3px 20px rgba($color: $black, $alpha: 0.8);
+        box-shadow: 3px 3px 20px rgba($black, 0.8);
     }
 };
 
-.nav {
-    border-top: 3px solid rgba($black, 0.1); 
-    margin-top: 20px;
-    @include size(12);
+@media screen and (max-width: 768px) {
+
+    .header {
+        clip-path: polygon(100% 0, 100% 70%, 45% 70%, 35% 100%, 0 100%, 0 0);
+    }
 }
 
-.nav__list {  
-    display: flex;
-    flex-wrap: wrap;   
-    width: 100%;
-    justify-content: space-around; 
-    list-style: none;   
-    @include sm(padding-left, 0);
-};
+@media screen and (max-width: 576px) {
 
-.nav__link {
-    position: relative;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 2.5;
-    text-decoration: none;
-    color: $black;
+    .header {
+        clip-path: none;
+    }
 
-    @include xs(font-size, 16px);
-
-    &::after {
-        position: absolute;
+    .header__content {
         display: block;
-        content: "";
-        bottom: -10px;
-        right: 0;
-        background: $black;
-        height: 5px;
-        width:0;        
-        transition: width 200ms ease;
+        text-align: center;
     }
 
-    &:hover::after {
-        left: 0;
-        width: 100%;
-        background: $black;
+    .header__contacts {
+        justify-content: center;
+        margin-bottom: 10px;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 320px) {
 
-    .header__link { display: none; }
+    .header { padding: 7px 0; }
 
-    .nav {
-        margin-top: 0;
-        border-top: none;
-    }
-
-    .nav__list {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background-color: $grey;
-        width: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 100px;
-        clip-path: circle(100px at 10% -20%);
-        transition: all .5s ease-in-out;
-        
-    }
-
-    .nav__list.open {
-        clip-path: circle(1000px at 10% -10%);
-    }
-
-    .hamburger {
-        position: absolute;
-        z-index:50;
-        top: 50%;
-        left: 5%;
-        cursor: pointer; 
-        transform: translate(-5%, -50%); 
-    }
-    
-    .hamburger__line {
-        width: 30px;
-        height: 3px;
-        margin: 5px;
-        background-color: $black;
-    
-    }
 }
-
-

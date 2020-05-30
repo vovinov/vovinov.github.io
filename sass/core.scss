@@ -1,15 +1,9 @@
 @charset "UTF-8";
 
-@include reset();
-
-img {
-    max-width: 100%;
-}
-
 html {
     box-sizing: border-box;
     font-size:20px;
-    color:$black;
+    color: $black;
     scroll-behavior: smooth;
 }
 
@@ -20,36 +14,21 @@ body {
     box-sizing: border-box;    
 }
 
-.container {
-    @include wrapper();    
+a {
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-.row {
-    @include row-flex();
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.d-flex {
-    display: flex;
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
 }
 
-.justify-content-center {
-    justify-content: center;
-}
-
-.justify-content-space-between {
-    justify-content: space-between; 
-}
-
-.mb-70 { 
-    margin-bottom: 70px; 
-    @include sm(margin-bottom, 30px);
-    
-}
-.mb-30 { margin-bottom: 30px; }
-
-.mt-70 { 
-    margin-top: 70px;
-    @include sm(margin-top, 30px);
-}
-
-
+img { max-width: 100%; }

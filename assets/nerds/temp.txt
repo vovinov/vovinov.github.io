@@ -1,9 +1,0 @@
-
-
-Подсветка
-background: rgba(255, 45, 82, 0.2);
-box-shadow: 0 0 0 3px rgb(255, 45, 82);
-
-
-<label for="modal-text">Текст письма</label>
-<input id="modal-text" type="text" name="text" value="" placeholder="В свободной форме">
