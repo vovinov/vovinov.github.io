@@ -44,6 +44,7 @@
     border-radius: 5px;
 
     &:hover {
+        color: $black;
         transform: scale(1.05);
         box-shadow: 3px 3px 20px rgba($black, 0.8);
     }

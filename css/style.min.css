@@ -389,6 +389,7 @@ img {
   transition: all .3s;
   border-radius: 5px; }
   .header__btn:hover {
+    color: #000;
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
     -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.8);
@@ -614,7 +615,12 @@ img {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  border: none; }
+  border: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .slick-arrow:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
   .slick-arrow:focus {
     outline: none; }
 

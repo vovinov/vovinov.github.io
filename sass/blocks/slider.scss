@@ -33,6 +33,12 @@
   height: 30px;
   background-color: transparent;
   border: none;
+  transition:  all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
 
   &:focus {
     outline: none;
